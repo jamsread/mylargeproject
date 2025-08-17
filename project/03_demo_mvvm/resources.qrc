@@ -1,5 +1,6 @@
-<RCC>
+<!DOCTYPE RCC>
+<RCC version="1.0">
     <qresource prefix="/">
-        <!-- 可以在这里添加图标、样式表等资源文件 -->
+        <file>qml/MainView.qml</file>
     </qresource>
 </RCC>
