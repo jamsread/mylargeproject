@@ -102,6 +102,14 @@ def main():
         return False
     print()
     
+    # 步骤 4.1: 安装 vcpkg 依赖
+    print("步骤 4.1: 安装 vcpkg 依赖包...请耐心等待，执行时间较久")
+    if not run_command([str(vcpkg_executable), "install"], cwd=vcpkg_dir):
+        print("❌ vcpkg 依赖安装失败")
+        return False
+    print("✅ vcpkg 依赖安装完成")
+    print()
+
     # 步骤 5: 显示下一步操作
     print("=" * 60)
     print("🎉 项目设置完成！")

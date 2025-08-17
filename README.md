@@ -11,17 +11,11 @@
 
 ## 快速开始
 
-1. 克隆项目并初始化子模块
+克隆项目、初始化子模块、安装 vcpkg 依赖（花费较久）
 
 ```bash
 git clone https://github.com/jamsread/mylargeproject.git
 python tools\setup.py
-```
-
-2. 手动安装 vcpkg 依赖
-
-```cmd
-.\vcpkg\vcpkg.exe install
 ```
 
 ## 构建项目
