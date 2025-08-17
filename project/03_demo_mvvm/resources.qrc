@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <!-- 可以在这里添加图标、样式表等资源文件 -->
+    </qresource>
+</RCC>

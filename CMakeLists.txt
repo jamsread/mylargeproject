@@ -41,3 +41,4 @@ endfunction()
 # 添加子项目
 add_subdirectory(project/01_demo_qt5_cmake_vcpkg)
 add_subdirectory(project/02_demo_my_large_project)
+add_subdirectory(project/03_demo_mvvm)
