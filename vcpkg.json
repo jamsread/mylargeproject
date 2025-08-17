@@ -1,0 +1,19 @@
+{
+  "name": "my-large-project",
+  "version": "1.0.0",
+  "dependencies": [
+    "boost-filesystem",
+    "boost-system", 
+    "boost-thread",
+    "eigen3",
+    "qt5-base",
+    "opencv4",
+    "fmt",
+    "spdlog",
+    "nlohmann-json",
+    "range-v3",
+    "cxxopts",
+    "gtest"
+  ],
+  "builtin-baseline": "4bb07a326d9b9bce3703272a509e5bc25dd9cfd5"
+}

@@ -1,0 +1,47 @@
+# 根目录 - 构建输出
+/build/
+/out/
+
+# vcpkg 目录 - 忽略安装和缓存文件
+/vcpkg_installed/
+/vcpkg/installed/
+/vcpkg/buildtrees/
+/vcpkg/downloads/
+/vcpkg/packages/
+
+# project 目录 - 忽略各项目的构建文件
+/project/*/build/
+/project/*/out/
+/project/*/*.exe
+/project/*/*.dll
+/project/*/*.lib
+/project/*/*.pdb
+
+# tools 目录 - 忽略生成的工具
+/tools/*.exe
+/tools/*.dll
+
+# 全局忽略文件
+# CMake 文件
+CMakeCache.txt
+CMakeFiles/
+
+# Visual Studio 文件
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# 临时文件
+*.tmp
+*.log
+*~
+
+# IDE 配置
+.vscode/settings.json
+.vscode/c_cpp_properties.json
+
+# 系统文件
+.DS_Store
+Thumbs.db

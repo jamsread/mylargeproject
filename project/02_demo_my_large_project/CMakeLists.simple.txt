@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.18)
+project(MySimpleProject LANGUAGES CXX)
+
+# 设置 C++ 标准
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 添加可执行文件 - 使用已有的 simple_test.cpp
+add_executable(my_simple_app src/simple_test.cpp)
+
+# 如果是 Windows 并且使用 MSVC，设置输出目录
+if(WIN32 AND MSVC)
+    set_target_properties(my_simple_app PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}
+        RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}
+    )
+endif()
