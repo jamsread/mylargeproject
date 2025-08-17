@@ -5,8 +5,8 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# 查找 Qt5 组件
-find_package(Qt5 REQUIRED COMPONENTS Core Widgets Qml Quick QuickControls2)
+# 查找 Qt5 组件 - 只需要 Core 和 Widgets
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets)
 
 # 创建可执行文件
 add_executable(demo_mvvm
@@ -22,13 +22,10 @@ add_executable(demo_mvvm
     resources.qrc
 )
 
-# 链接 Qt 库
+# 链接 Qt 库 - 只链接需要的组件
 target_link_libraries(demo_mvvm
     Qt5::Core
     Qt5::Widgets
-    Qt5::Qml
-    Qt5::Quick
-    Qt5::QuickControls2
 )
 
 # 设置包含目录
